@@ -4,13 +4,13 @@
     v-for="data in props.details"
   >
     <div>
-      <h1 class="text-xl mb-5 capitalize">{{ data.name }}</h1>
+      <h1 class="text-xl mb-5 capitalize font-semibold">{{ data.name }}</h1>
       <ol>
         <li
-          v-for="instruction in data.instructions"
+          v-for="(instruction, index) in data.instructions"
           class="mb-3 text-sm lg:pr-24 md:pr-24 text-justify text-slate-600"
         >
-          {{ instruction }}
+          {{ index + 1 }}. {{ instruction }}
         </li>
       </ol>
     </div>
