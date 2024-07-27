@@ -2,6 +2,7 @@
 import { ref, watch } from "vue";
 import axios from "axios";
 import ExcerciseDetails from "./components/ExcerciseDetails.vue";
+import Navbar from "./components/Navbar.vue";
 
 const apiData = ref(""); // Holds the fetched API data
 const bodyPart = ref(""); // Holds the selected body part
@@ -53,16 +54,19 @@ const updateSelectedMuscle = (e) => {
 </script>
 
 <template>
-  <div class="px-48 py-12">
-    <h1 class="text-3xl mb-6">Choose the muscle you want to work</h1>
-    <select
-      @change="updateSelectedMuscle"
-      class="bg-slate-100 px-5 py-3 rounded-lg mb-5"
-    >
-      <option v-for="(muscle, index) in muscles" :value="muscle" :key="index">
-        {{ muscle }}
-      </option>
-    </select>
+  <Navbar />
+  <div class="px-48 py-12" id="app-container">
+    <div class="flex justify-between">
+      <h1 class="text-3xl mb-6">Choose the muscle 💪</h1>
+      <select
+        @change="updateSelectedMuscle"
+        class="bg-slate-100 px-5 py-3 rounded-lg mb-5"
+      >
+        <option v-for="(muscle, index) in muscles" :value="muscle" :key="index">
+          {{ muscle }}
+        </option>
+      </select>
+    </div>
     <ExcerciseDetails :details="apiData" />
     <!-- <h1 v-if="bodyPart" v-for="names in apiData">{{ names.name }}</h1> -->
   </div>

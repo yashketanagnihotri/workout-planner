@@ -4,7 +4,7 @@
     v-for="data in props.details"
   >
     <div>
-      <h1 class="text-xl mb-5">{{ data.name }}</h1>
+      <h1 class="text-xl mb-5 capitalize">{{ data.name }}</h1>
       <ol>
         <li
           v-for="instruction in data.instructions"
@@ -15,7 +15,7 @@
       </ol>
     </div>
     <div>
-      <img :src="data.gifUrl" alt="" />
+      <img :src="data.gifUrl" alt="" class="rounded-lg shadow-sm" />
     </div>
   </div>
 </template>
