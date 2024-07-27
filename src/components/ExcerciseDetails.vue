@@ -1,6 +1,6 @@
 <template>
   <div
-    class="md:flex lg:flex justify-between bg-slate-100 mb-5 p-10 rounded-lg border-2 border-transparent hover:border-orange-500 focus:border-orange-500 cursor-pointer transition duration-300 ease-in-out"
+    class="md:flex lg:flex justify-between bg-slate-100 mb-5 p-10 rounded-lg border-2 border-transparent hover:border-orange-500 focus:border-orange-500 cursor-pointer transition duration-300 ease-in-out opacity-85"
     v-for="data in props.details"
   >
     <div>
@@ -15,7 +15,7 @@
       </ol>
     </div>
     <div>
-      <img :src="data.gifUrl" alt="" class="rounded-lg shadow-sm" />
+      <img :src="data.gifUrl" alt="" class="rounded-lg shadow-sm opacity-100" />
     </div>
   </div>
 </template>

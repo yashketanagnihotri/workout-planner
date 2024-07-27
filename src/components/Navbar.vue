@@ -1,7 +1,9 @@
 <script></script>
 
 <template>
-  <nav class="bg-slate-800 p-5 text-slate-50 text-center text-4xl">
+  <nav
+    class="p-5 mt-5 text-slate-50 text-center text-5xl tracking-wide font-semibold"
+  >
     <h1 class="drop">Ketone Fitness Planner</h1>
   </nav>
 </template>
