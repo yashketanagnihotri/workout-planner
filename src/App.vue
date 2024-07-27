@@ -88,13 +88,13 @@ onBeforeUnmount(() => {
     <div class="content">
       <div class="flex justify-between">
         <h1
-          class="md:text-3xl lg:text-3xl text-xl mb-6 text-slate-50 capitalize"
+          class="md:text-3xl lg:text-3xl text-xl mb-6 text-slate-50 capitalize opacity-85"
         >
           Choose the muscle
         </h1>
         <select
           @change="updateSelectedMuscle"
-          class="bg-slate-100 px-5 py-3 rounded-lg mb-5"
+          class="bg-slate-100 px-5 py-3 rounded-lg mb-5 opacity-85"
         >
           <option
             v-for="(muscle, index) in muscles"
