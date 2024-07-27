@@ -55,7 +55,7 @@ const updateSelectedMuscle = (e) => {
 
 <template>
   <Navbar />
-  <div class="px-48 py-12" id="app-container">
+  <div class="container" id="app-container">
     <div class="flex justify-between">
       <h1 class="text-3xl mb-6">Choose the muscle 💪</h1>
       <select
@@ -72,4 +72,8 @@ const updateSelectedMuscle = (e) => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#app-container {
+  padding: 5% 12%;
+}
+</style>
