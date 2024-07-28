@@ -63,16 +63,14 @@ onMounted(() => {
     THREE: THREE,
     mouseControls: true,
     touchControls: true,
-    gyroControls: true,
+    gyroControls: false,
     minHeight: 200.0,
     minWidth: 200.0,
-    highlightColor: 0xffa700,
-    midtoneColor: 0xff2000,
-    lowlightColor: 0x1400ff,
-    baseColor: 0x2d00ff,
+    highlightColor: 0x6c6c6c,
+    midtoneColor: 0x535353,
+    lowlightColor: 0x333333,
+    baseColor: 0xffffff,
     blurFactor: 0.9,
-    speed: 2.8,
-    zoom: 0.4,
   });
 });
 
@@ -88,7 +86,7 @@ onBeforeUnmount(() => {
     <div class="content">
       <div class="flex justify-between">
         <h1
-          class="md:text-3xl lg:text-3xl text-xl mb-6 text-slate-50 capitalize opacity-85"
+          class="md:text-3xl lg:text-3xl text-xl mb-6 text-slate-50 capitalize opacity-95"
         >
           Choose the muscle
         </h1>
@@ -137,6 +135,6 @@ onBeforeUnmount(() => {
 .content {
   position: relative;
   z-index: 1; /* Ensure the content is above the Vanta background */
-  padding: 5% 12%;
+  padding: 3% 12% 5% 12%;
 }
 </style>
